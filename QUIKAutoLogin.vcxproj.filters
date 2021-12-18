@@ -21,6 +21,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="QUIKAutoLogin.lua" />
-    <None Include="README.me" />
+    <None Include="README.md" />
   </ItemGroup>
 </Project>
