@@ -2,8 +2,11 @@
 Плагин для QUIK, позволяющий делать автоматический вход по логину и паролю
 
 ## Установка
-Скопировать bin/QUIKAutoLogin.dll и bin/QUIKAutoLogin.lua в папку QUIK
-В QUIKAutoLogin.lua установить логин/пароль
+Скопировать файлы из bin/QUIKAutoLogin.dll и bin/QUIKAutoLogin.lua в папку QUIK.
+
+В QUIKAutoLogin.lua прописать ваши логин и пароль
+
+QUIKAutoLogin.lua:
 ```
 package.path = ""
 package.cpath = getScriptPath() .. "\\QUIKAutoLogin.dll"
