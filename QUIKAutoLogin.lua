@@ -5,8 +5,8 @@ require("AutoLogin")
 
 function main()
 
-	login =		"ваш логин"
-	passwd =	"пароль"
+	login =		"РІР°С€ Р»РѕРіРёРЅ"
+	passwd =	"РїР°СЂРѕР»СЊ"
 
 	Auth(login, passwd)
 

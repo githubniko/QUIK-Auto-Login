@@ -14,8 +14,8 @@ Qlua::Qlua *qlua = &Qlua::_qlua;
 
 
 
-// Конвертирует std::string to std::wstring
-// Взято с https://stackoverflow.com/questions/27220/how-to-convert-stdstring-to-lpcwstr-in-c-unicode
+// РљРѕРЅРІРµСЂС‚РёСЂСѓРµС‚ std::string to std::wstring
+// Р’Р·СЏС‚Рѕ СЃ https://stackoverflow.com/questions/27220/how-to-convert-stdstring-to-lpcwstr-in-c-unicode
 //
 std::wstring s2ws(const std::string& s)
 {
@@ -32,7 +32,7 @@ std::wstring s2ws(const std::string& s)
 int lua_auth(lua_State* L)
 {
 	Qlua::CLua lua(L);
-	int n = lua.GetTop(); // получаем кол-во 
+	int n = lua.GetTop(); // РїРѕР»СѓС‡Р°РµРј РєРѕР»-РІРѕ 
 
 	if (n != 2) 
 		return 0;
@@ -47,7 +47,7 @@ int lua_auth(lua_State* L)
 
 extern "C" LUALIB_API int luaopen_AutoLogin(lua_State *L) {
 	*qlua = Qlua::Qlua(L);
-	qlua->RegFunction("Auth", &lua_auth); // регистрирую новую функцию в lua
+	qlua->RegFunction("Auth", &lua_auth); // СЂРµРіРёСЃС‚СЂРёСЂСѓСЋ РЅРѕРІСѓСЋ С„СѓРЅРєС†РёСЋ РІ lua
 
 	return 0;
 }

@@ -1,9 +1,9 @@
 # QUIK Auto Login
-Плагин для QUIK, позволяющий делать автоматический вход по логину и паролю
+РџР»Р°РіРёРЅ РґР»СЏ QUIK, РїРѕР·РІРѕР»СЏСЋС‰РёР№ РґРµР»Р°С‚СЊ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРёР№ РІС…РѕРґ РїРѕ Р»РѕРіРёРЅСѓ Рё РїР°СЂРѕР»СЋ
 
-## Установка
-Скопировать bin/QUIKAutoLogin.dll и bin/QUIKAutoLogin.lua в папку QUIK
-В QUIKAutoLogin.lua установить логин/пароль
+## РЈСЃС‚Р°РЅРѕРІРєР°
+РЎРєРѕРїРёСЂРѕРІР°С‚СЊ bin/QUIKAutoLogin.dll Рё bin/QUIKAutoLogin.lua РІ РїР°РїРєСѓ QUIK
+Р’ QUIKAutoLogin.lua СѓСЃС‚Р°РЅРѕРІРёС‚СЊ Р»РѕРіРёРЅ/РїР°СЂРѕР»СЊ
 ```
 package.path = ""
 package.cpath = getScriptPath() .. "\\QUIKAutoLogin.dll"
@@ -12,12 +12,12 @@ require("AutoLogin")
 
 function main()
 
-	login =		"ваш логин"
-	passwd =	"пароль"
+	login =		"РІР°С€ Р»РѕРіРёРЅ"
+	passwd =	"РїР°СЂРѕР»СЊ"
 
 	Auth(login, passwd)
 
 end
 ```
 
-В QUIK Меню -> Сервисы -> Lua скрипты... Добавить QUIKAutoLogin.lua и Запустить.
+Р’ QUIK РњРµРЅСЋ -> РЎРµСЂРІРёСЃС‹ -> Lua СЃРєСЂРёРїС‚С‹... Р”РѕР±Р°РІРёС‚СЊ QUIKAutoLogin.lua Рё Р—Р°РїСѓСЃС‚РёС‚СЊ.
