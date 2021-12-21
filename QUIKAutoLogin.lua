@@ -10,4 +10,8 @@ function main()
 
 	Auth(login, passwd)
 
+	while not stopped do
+	       sleep(100)
+	end
+
 end

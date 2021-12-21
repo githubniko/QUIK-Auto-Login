@@ -48,6 +48,5 @@ int lua_auth(lua_State* L)
 extern "C" LUALIB_API int luaopen_AutoLogin(lua_State *L) {
 	*qlua = Qlua::Qlua(L);
 	qlua->RegFunction("Auth", &lua_auth); // регистрирую новую функцию в lua
-
 	return 0;
 }
