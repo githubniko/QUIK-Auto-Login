@@ -1,6 +1,9 @@
 # QUIK Auto Login
 Плагин для QUIK, позволяющий делать автоматический вход по логину и паролю
 
+## Требования
+ОС Windows
+
 ## Установка
 Скопировать файлы из bin/QUIKAutoLogin.dll и bin/QUIKAutoLogin.lua в папку QUIK.
 
